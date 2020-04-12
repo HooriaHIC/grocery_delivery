@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
-import Routes from './components/Routes';
+import Routes from './components/utils/Navbar/Routes';
 import { Router } from "react-router-dom";
-import createHistory from 'history/createBrowserHistory'
-import * as serviceWorker from "./serviceWorker"
+import createHistory from 'history/createBrowserHistory';
+//import * as serviceWorker from "./serviceWorker"
+
 const history = createHistory()
 
 function App() {

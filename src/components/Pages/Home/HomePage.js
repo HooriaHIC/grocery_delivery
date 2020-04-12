@@ -1,6 +1,6 @@
 import React from 'react';
-import '../App.css';
-import SmBoxes from './SmBoxes';
+import './HomePage.css';
+import SmBoxes from '../../widgets/Cards/SmBoxes';
 
 function HomePage() {
     return (

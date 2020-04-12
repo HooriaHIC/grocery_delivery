@@ -1,0 +1,86 @@
+.appbar {
+    background: var(--primary-color) !important;
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+    border-radius: 5%/5%;
+    height: 50px;
+    text-transform: capitalize !important;
+    font-size: 1em !important;
+}
+
+.btn:hover {
+    background-color: #3d3d42 !important;
+}
+
+.searchContainer {
+    display: inline-flex;
+    flex: 1 1 300px;
+    position: relative;
+    height: 40px;
+    border: none;
+    border-radius: 10px / 10px;
+    overflow: hidden;
+}
+
+.searchIcon {
+    padding: 0.7rem;
+    background-color: #3d3d42;
+}
+
+.searchBox {
+    border: 0;
+    background-color: #3d3d42;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+    flex: 1;
+    color: var(--white);
+}
+
+
+.centered {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row;
+}
+
+
+.col-lg-4 {
+    display: flex;
+    align-items: center !important;
+}
+
+.buttonImage {
+    height: 25px !important;
+    width: 27px !important;
+    border-radius: 50%;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.downIco {
+    margin-left: 20px !important;
+    font-weight: 100 !important;
+    margin: 5px !important;
+    color: var(--white) !important;
+}
+
+.cart {
+    font-size: 1.6em !important;
+    margin-top: 10px !important;
+    margin-left: 15px !important;
+    color: var(--red) !important;
+}
+
+.righted {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: right !important;
+}
+
+.NavbarTop {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
