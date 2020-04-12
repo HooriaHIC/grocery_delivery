@@ -9,7 +9,9 @@ body {
 }
 
 *:focus {
-  outline: none;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .primary {
@@ -22,7 +24,8 @@ body {
 }
 
 
-.box:hover,
+.StoreCard:hover,
+.DealCard:hover,
 .btn:hover,
 .cart:hover {
   margin-top: -5px;
