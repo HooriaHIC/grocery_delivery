@@ -35,7 +35,7 @@ class ProductModal extends Component {
                     <Modal.Header closeButton className="productModalHead">
                     </Modal.Header>
                     <Modal.Body className="productModalBody">
-                        <Row className="paralax">
+                        <Row >
                             <Col xs={6} md={4}>
 
                             </Col>
@@ -98,7 +98,7 @@ class ProductModal extends Component {
                         </Row>
                     </Modal.Body>
                     <Modal.Footer className="productModalFoot">
-                        <a className="addToCartLink" href="#">Add To Cart</a>
+                        <a className="addToCartLink" href="/">Add To Cart</a>
                     </Modal.Footer>
 
                 </Modal>
