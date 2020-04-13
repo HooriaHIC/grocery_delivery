@@ -39,7 +39,7 @@
     align-items: center;
     display: flex;
     cursor: pointer;
-    transition: all 0.3333s;
+    transition: all 0.5s ease-out;
     flex-direction: column;
     background-color: #007cc2;
 }
@@ -68,7 +68,7 @@
     align-items: center;
     display: flex;
     cursor: pointer;
-    transition: all 0.3333s;
+    transition: all 1s ease-out;
     flex-direction: column;
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.534)), url("https://www.thesun.co.uk/wp-content/uploads/2020/01/Asda-meal-deal.jpg") !important;
     background-size: cover;
@@ -84,4 +84,17 @@
             255,
             0.4) !important;
     position: absolute;
+}
+
+.ProductName {
+    color: var(--white) !important;
+    text-align: center !important;
+}
+
+
+.ProductPrice {
+    color: rgba(255, 255,
+            255,
+            0.4) !important;
+    text-align: center !important;
 }

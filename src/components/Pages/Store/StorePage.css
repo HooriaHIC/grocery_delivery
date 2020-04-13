@@ -1,5 +1,72 @@
-.arrows {
-    font-size: 1em;
-    margin: 20px;
+/* package default styles */
+.component-slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.component-slider .slider-container {
+    margin: 0 20px;
+    overflow: hidden;
+
+}
+
+.component-slider .slider-content {
+    display: inline-block;
+    transition: margin-left 0.15s ease-in;
+}
+
+.component-slider .caret {
+    width: 40px;
+    z-index: 99 !important;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 50%;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s linear !important;
+    font-size: 20px;
+    font-weight: 300 !important;
     color: var(--white);
+}
+
+.component-slider .caret:hover {
+    height: 42px !important;
+    width: 42px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.component-slider .caret-right {
+    right: 0;
+}
+
+.component-slider .caret-left {
+    left: 0;
+}
+
+/*custom styles*/
+.menu-bar {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.menu-item {
+    width: 300px;
+    display: inline-block;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+.menu-item:hover {
+    transform: scale(1.02) !important;
+    z-index: 3 !important;
 }
