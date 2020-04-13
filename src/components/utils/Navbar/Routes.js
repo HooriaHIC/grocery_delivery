@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, withRouter } from "react-router-dom"
 import SingleStorePage from "../../Pages/Store/StorePage";
 import HomePage from '../../Pages/Home/HomePage';
 import NotFound from '../../Pages/404/NotFound';
@@ -13,7 +13,12 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
+var Text = <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span id="BackText" className="backText">Back</span></button>;
 
+
+if (history.location.pathname === '/') {
+    Text = <h5>Cornershop</h5>
+}
 class Routes extends Component {
 
 
@@ -35,7 +40,7 @@ class Routes extends Component {
                             <div className="col-4 LogoOrBack">
                                 <section className="leftBox shopname ml-4">
                                     <Typography className="typography">
-                                        <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span className="backText">Back</span></button>
+                                        {Text}
                                     </Typography>
                                 </section>
                             </div>
@@ -92,4 +97,4 @@ class Routes extends Component {
     }
 }
 
-export default Routes
+export default withRouter(Routes)
