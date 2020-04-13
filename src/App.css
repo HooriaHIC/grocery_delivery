@@ -2,6 +2,7 @@
   --primary-color: #2c2c2e;
   --white: #d4d4d4;
   --red: #ff0026;
+  --red-rgb: 255, 0, 38;
 }
 
 body {
@@ -30,6 +31,7 @@ body {
 .cart:hover {
   margin-top: -5px;
   cursor: pointer;
+  transition: margin 0.3s ease-out;
 }
 
 

@@ -7,12 +7,14 @@
 .btn {
     border-radius: 5%/5%;
     height: 50px;
+    margin: 5px;
     text-transform: capitalize !important;
     font-size: 1em !important;
 }
 
 .btn:hover {
     background-color: #3d3d42 !important;
+
 }
 
 .searchContainer {
@@ -69,8 +71,7 @@
 
 .cart {
     font-size: 1.6em !important;
-    margin-top: 10px !important;
-    margin-left: 15px !important;
+    text-align: center;
     color: var(--red) !important;
 }
 
@@ -96,13 +97,13 @@
     background: transparent;
     font-size: 1em !important;
     border: none !important;
-    transition: ease-in-out 1s;
+    transition: all 2s ease-out;
 }
 
 
 .backButton:hover .fa-chevron-left {
     margin-left: -5px !important;
-    transition: ease-in-out 0.5s;
+    transition: all 2s ease-out;
     margin-right: 5px !important;
 }
 

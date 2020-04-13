@@ -1,0 +1,52 @@
+.modal-content {
+    background-color: var(--primary-color) !important;
+    border-radius: 10px !important;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    width: 350px !important;
+
+}
+
+.slogan {
+    font-size: 0.9em !important;
+}
+
+.Auth-btn {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.login-btn,
+.signup-btn,
+.signuplater-btn {
+    border: none !important;
+    border-radius: 7px /7px;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 5px;
+    height: 45px;
+    transition: box-shadow 0.5s ease-out !important;
+}
+
+.login-btn {
+    color: var(--white);
+    background-color: var(--red) !important;
+}
+
+.signup-btn {
+    color: var(--red);
+    background-color: rgba(var(--red-rgb), .1) !important;
+}
+
+.signuplater-btn {
+    color: var(--red);
+    font-size: 0.9em !important;
+    background-color: transparent !important;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) !important;
+}
