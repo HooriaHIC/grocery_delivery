@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Routes from './components/utils/Navbar/Routes';
 import { Router } from "react-router-dom";
-import createHistory from 'history/createBrowserHistory';
+const createHistory = require("history").createBrowserHistory;
 //import * as serviceWorker from "./serviceWorker"
 
 const history = createHistory()

@@ -1,35 +1,10 @@
-.box {
-    height: auto;
-    min-height: 180px !important;
-    padding: 20px;
-    min-width: 250px;
-    border-radius: 5%/5%;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-    transition: all 0.3333s;
-    flex-direction: column;
-    background-color: #007cc2;
-}
-
-.box img {
-    width: 150px;
-}
-
-.box span {
-    margin-top: 50px;
-    font-size: 1em;
-    background-color: rgba(255, 255,
-            255,
-            0.3) !important;
-}
-
 .card {
     background-color: transparent;
     padding: 0rem;
     height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .cards {
@@ -53,10 +28,60 @@
     }
 }
 
-@media(max-width: 600px) {
-    .shopname {
-        display: none !important;
-    }
+.StoreCard {
+    height: auto;
+    min-height: 180px !important;
+    padding: 20px;
+    min-width: 250px;
+    border-radius: 5%/5%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.3333s;
+    flex-direction: column;
+    background-color: #007cc2;
+}
+
+.StoreCard img {
+    width: 150px;
+}
+
+.StoreCard span {
+    margin-top: 50px;
+    font-size: 1em;
+    background-color: rgba(255, 255,
+            255,
+            0.3) !important;
+}
+
+.DealCard {
+    height: auto;
+    margin: 5px !important;
+    height: 150px !important;
+    padding: 20px;
+    width: 280px;
+    border-radius: 5%/5%;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.3333s;
+    flex-direction: column;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.534)), url("https://www.thesun.co.uk/wp-content/uploads/2020/01/Asda-meal-deal.jpg") !important;
+    background-size: cover;
+    /*background: radial-gradient(transparent, rgba(0, 0, 0, 0.3));*/
+}
 
 
+.DealCard span {
+    margin-top: 50px;
+    font-size: 1em;
+    color: black;
+    background-color: rgba(255, 255,
+            255,
+            0.4) !important;
+    position: absolute;
 }

@@ -9,10 +9,9 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-rainbow-components": "^1.14.1",
+    "react-horizontal-scrolling-menu": "^0.7.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "shards-react": "^1.0.3"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -84,3 +84,28 @@
 .NavbarTop {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+@media(max-width: 600px) {
+    .shopname {
+        display: none !important;
+    }
+}
+
+.backButton {
+    color: var(--red);
+    background: transparent;
+    font-size: 1em !important;
+    border: none !important;
+    transition: ease-in-out 1s;
+}
+
+
+.backButton:hover .fa-chevron-left {
+    margin-left: -5px !important;
+    transition: ease-in-out 0.5s;
+    margin-right: 5px !important;
+}
+
+.fa-chevron-left {
+    font-size: 1em !important;
+}
