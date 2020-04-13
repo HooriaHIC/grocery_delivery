@@ -32,25 +32,25 @@ class Routes extends Component {
                 <AppBar position="static" className="appbar">
                     <Toolbar className="NavbarTop">
                         <div className='row w-100'>
-                            <div className="col-lg-4">
+                            <div className="col-4 LogoOrBack">
                                 <section className="leftBox shopname ml-4">
                                     <Typography className="typography">
 
-                                        <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> Back</button>
+                                        <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span className="backText">Back</span></button>
                                     </Typography>
                                 </section>
                             </div>
-                            <div className="col-lg-4 centered">
+                            <div className="col-4 centered">
                                 <section className="centerBox">
                                     <Typography className="typography">
                                         <b>Stores</b>
                                     </Typography>
                                 </section>
                             </div>
-                            <div className="col-lg-4 righted">
+                            <div className="col-4 righted">
                                 <section className="rightBox">
                                     <Typography className="typography">
-                                        <Button className="primary btn" onClick={this.onLoginClick}>
+                                        <Button className="primary btn AccountBtn" onClick={this.onLoginClick}>
                                             <img alt="user account avatar" src={require('C:/Users/hooriaishtiaq/workspace/Mernstack/grocery_delivery/src/assets/images/placeholder_account.png')} className="buttonImage" /> Account
                                     </Button>
                                         <Button className="primary btn" onClick={this.onLoginClick}>
@@ -66,11 +66,11 @@ class Routes extends Component {
                     <Toolbar>
                         <div className='row w-100'>
                             <div className='col-lg-4'>
-                                <Button onClick={this.onLoginClick} className="primary btn" >
+                                <Button onClick={this.onLoginClick} className="primary postalCodeBtn" >
                                     <img alt="home icon" src={require('C:/Users/hooriaishtiaq/workspace/Mernstack/grocery_delivery/src/assets/images/homeicon.png')} className="buttonImage" /> <b>M4b 146, CA</b> <i className="fa fa-chevron-down downIco"></i>
                                 </Button>
                             </div>
-                            <div className="col-lg-4 centered" >
+                            <div className="col-lg-4 centered p-1 pl-4" >
                                 <div className="searchContainer">
                                     <i className="fa fa-search searchIcon"></i>
                                     <input className="searchBox" type="search" name="search" placeholder="Search Stores" />
