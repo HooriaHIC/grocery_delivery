@@ -17,25 +17,25 @@ class StorePage extends React.Component {
                             renderLeftArrow={renderLeftArrow}
                             renderRightArrow={renderRightArrow}
                         >
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
-                            <div className="menu-item">
+                            <div className="menu-item StorePageSlide">
                                 <DealCard />
                             </div>
                         </ComponentSlider>
