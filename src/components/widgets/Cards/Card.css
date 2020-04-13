@@ -1,3 +1,4 @@
+/* grid card styles */
 .card {
     background-color: transparent;
     padding: 0rem;
@@ -28,6 +29,8 @@
     }
 }
 
+/* Grid card styles End */
+/* Storecard styles */
 .StoreCard {
     height: auto;
     min-height: 180px !important;
@@ -56,6 +59,8 @@
             0.3) !important;
 }
 
+/* Storecard styles end*/
+/* Dealcard styles */
 .DealCard {
     height: auto;
     margin: 5px !important;
@@ -86,6 +91,8 @@
     position: absolute;
 }
 
+/* Dealcard styles End */
+/* Productcard styles */
 .ProductName {
     color: var(--white) !important;
     text-align: center !important;
@@ -97,4 +104,50 @@
             255,
             0.4) !important;
     text-align: center !important;
+    line-height: 0.4em !important;
 }
+
+.ProductDesc {
+    color: rgba(255, 255,
+            255,
+            0.4) !important;
+    line-height: 0.2em !important;
+    text-align: center !important;
+}
+
+.ProductCardBody {
+    cursor: pointer;
+    min-height: 300px;
+}
+
+.ProductCardBody:hover {
+    cursor: pointer;
+    background: rgba(255, 255,
+            255,
+            0.1);
+    transition: ease 1s ease-out;
+    border-radius: 5px/5px;
+}
+
+.productCard {
+    border-right: 1px solid rgba(255, 255,
+            255,
+            0.1) !important;
+}
+
+.AddToCartBtn {
+    float: right !important;
+    align-self: flex-end !important;
+    margin: 5px;
+    background: var(--primary-color);
+    border: solid rgba(255, 255,
+            255,
+            0.1) .4px;
+    color: var(--white);
+    padding: 5px;
+    padding-left: 15px;
+    box-shadow: inset 0 0 10px black;
+    padding-right: 15px;
+}
+
+/* Productcard styles */

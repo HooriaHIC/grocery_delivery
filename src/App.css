@@ -1,12 +1,13 @@
 :root {
   --primary-color: #2c2c2e;
   --white: #d4d4d4;
+  --dark: #0e0e10;
   --red: #ff0026;
   --red-rgb: 255, 0, 38;
 }
 
 body {
-  background: #0e0e10;
+  background: var(--dark);
 }
 
 *:focus {

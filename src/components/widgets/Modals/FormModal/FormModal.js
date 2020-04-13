@@ -26,9 +26,9 @@ class FormModal extends Component {
                 <Modal  {...props}
                     size="sm"
                     aria-labelledby="contained-modal-title-vcenter"
-                    centered show={this.state.show} onHide={this.handleClose}>
+                    centered show={this.state.show} onHide={this.handleClose} >
 
-                    <Modal.Body >
+                    <Modal.Body style={{ width: '300px' }}>
                         <h3>Cornorshop</h3>
                         <p className="mt-3 slogan">We deliver your groceries in one hour</p>
                         <div className="Auth-btn mt-5">
