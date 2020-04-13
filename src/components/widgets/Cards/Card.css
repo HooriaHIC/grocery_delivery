@@ -96,6 +96,7 @@
 .ProductName {
     color: var(--white) !important;
     text-align: center !important;
+    text-transform: capitalize !important;
 }
 
 
@@ -112,12 +113,14 @@
             255,
             0.4) !important;
     line-height: 0.2em !important;
+    text-transform: capitalize !important;
     text-align: center !important;
 }
 
 .ProductCardBody {
     cursor: pointer;
     min-height: 300px;
+    padding: 10px;
 }
 
 .ProductCardBody:hover {
@@ -130,9 +133,9 @@
 }
 
 .productCard {
-    border-right: 1px solid rgba(255, 255,
-            255,
-            0.1) !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
 }
 
 .AddToCartBtn {

@@ -70,3 +70,37 @@
     transform: scale(1.02) !important;
     z-index: 3 !important;
 }
+
+/* Category Section */
+.categorySection {
+    width: 90%;
+    margin: auto;
+    background-color: var(--medium-black);
+    border-radius: 10px / 10px;
+}
+
+.CategoryHead {
+    background-color: var(--primary-color) !important;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px 10px 0 0px;
+    color: var(--white)
+}
+
+.CategorySlide {
+    width: 220px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    text-transform: uppercase;
+
+    border-right: 1px solid rgba(255, 255,
+            255,
+            0.1) !important;
+}
+
+.navItemRight {
+    text-align: end !important;
+    color: var(--red) !important;
+}
