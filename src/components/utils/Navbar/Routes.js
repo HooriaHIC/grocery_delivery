@@ -14,8 +14,8 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
 
-
 class Routes extends Component {
+
 
     loginModalRef = ({ handleShow }) => {
         this.showModal = handleShow;
@@ -35,7 +35,6 @@ class Routes extends Component {
                             <div className="col-4 LogoOrBack">
                                 <section className="leftBox shopname ml-4">
                                     <Typography className="typography">
-
                                         <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span className="backText">Back</span></button>
                                     </Typography>
                                 </section>
@@ -83,6 +82,7 @@ class Routes extends Component {
                 </AppBar>
                 <Switch>
                     <Route exact path="/" component={HomePage} />
+
                     <Route path="/store" component={SingleStorePage} />
                     <Route component={NotFound} />
                 </Switch>
