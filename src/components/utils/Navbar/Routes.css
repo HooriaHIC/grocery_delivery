@@ -23,7 +23,6 @@
 
 .btn:hover {
     background-color: #3d3d42 !important;
-
 }
 
 .searchContainer {
@@ -48,7 +47,6 @@
     color: var(--white);
     width: 100% !important;
 }
-
 
 .centered {
     display: flex;
@@ -113,7 +111,6 @@
     border: none !important;
     transition: all 2s ease-out;
 }
-
 
 .backButton:hover .fa-chevron-left {
     margin-left: -5px !important;
