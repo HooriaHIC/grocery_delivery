@@ -60,7 +60,7 @@ class Routes extends Component {
                                 <section className="rightBox">
                                     <Typography className="typography">
                                         <Button className="primary btn AccountBtn" onClick={this.onLoginClick}>
-                                            <img alt="user account avatar" src={require('C:/Users/hooriaishtiaq/workspace/Mernstack/grocery_delivery/src/assets/images/placeholder_account.png')} className="buttonImage" /> Account
+                                            <img alt="user account avatar" src={require('../../../../src/assets/images/placeholder_account.png')} className="buttonImage" /> Account
                                     </Button>
                                         <Button className="primary btn" onClick={this.onLoginClick}>
                                             <i className="fa fa-cart-plus cart"></i>
@@ -75,7 +75,7 @@ class Routes extends Component {
                         <div className='row w-100'>
                             <div className='col-lg-4'>
                                 <Button onClick={this.onLoginClick} className="primary postalCodeBtn" >
-                                    <img alt="home icon" src={require('C:/Users/hooriaishtiaq/workspace/Mernstack/grocery_delivery/src/assets/images/homeicon.png')} className="buttonImage" /> <b>M4b 146, CA</b> <i className="fa fa-chevron-down downIco"></i>
+                                    <img alt="home icon" src={require('../../../../src/assets/images/homeicon.png')} className="buttonImage" /> <b>M4b 146, CA</b> <i className="fa fa-chevron-down downIco"></i>
                                 </Button>
                             </div>
                             <div className="col-lg-4 centered p-1 pl-4" >
