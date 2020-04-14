@@ -109,11 +109,9 @@ class Routes extends Component {
                                             <Button onClick={this.onShopersClick} className="primary postalCodeBtn" >
                                                 <img alt="home icon" src={require('../../../assets/images/time.png')} className="buttonImage" /> <b style={{ textTransform: 'capitalize' }}>Shoppers Occupied</b>
                                             </Button>
-
                                         );
                                     }
                                 })()}
-
                             </div>
                             <div className="col-lg-4 centered p-1 pl-4" >
                                 <div className="searchContainer">
