@@ -1,6 +1,7 @@
 import React from 'react';
 import './Orders.css';
 
+
 function OrdersPage() {
     return (
         <div className="mt-5 p-2">
@@ -8,5 +9,4 @@ function OrdersPage() {
         </div>
     );
 }
-
 export default OrdersPage;

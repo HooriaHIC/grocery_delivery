@@ -153,4 +153,55 @@
     padding-right: 15px;
 }
 
-/* Productcard styles */
+/* Productcard styles Ends*/
+/* Aisles styles */
+.AislesCardHead {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url("https://www.shortstack.com/wp-content/uploads/2019/04/blog-featured-beauty-hashtags.jpg") !important;
+    background-position: center !important;
+    transition: ease-in 3s ease-out !important;
+    border-radius: 0 5px 5px 0 !important;
+    color: var(--white) !important;
+
+}
+
+.AislesCardHead:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.534)), url("https://www.shortstack.com/wp-content/uploads/2019/04/blog-featured-beauty-hashtags.jpg") !important;
+}
+
+.AislesCardHead .navbar-brand h6 {
+    color: var(--white) !important
+}
+
+.AislesCard {
+    background: var(--medium-black) !important;
+    min-height: 250px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 10px !important;
+}
+
+.AislesCard .list-group-item {
+    background: var(--medium-black) !important;
+    color: var(--white);
+    border-radius: 5px !important;
+    border: none !important;
+    width: 95%;
+    transition: all 0.5s !important;
+}
+
+.AislesCard .list-group-item:hover {
+    background: rgba(253, 253, 253, 0.05) !important;
+    color: var(--red) !important;
+}
+
+.AislesCard .list-group-item a {
+    transition: all 0.5s !important;
+}
+
+
+.AislesCard .list-group-item a:hover {
+    color: var(--red) !important;
+}
+
+
+/* Aisles Styles Ends */

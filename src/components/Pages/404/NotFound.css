@@ -1,0 +1,42 @@
+.hit-the-floor {
+    color: var(--red);
+    font-size: 10rem;
+    font-weight: bold;
+    font-family: Helvetica;
+    text-shadow:
+        0 11px 0 #902333,
+        0 12px 0 #902333,
+        0 13px 0 #af4454,
+        0 14px 0 var(--red),
+        0 15px 0 var(--red),
+        0 6px 1px rgba(167, 39, 39, 0.1),
+        0 0 5px rgba(156, 11, 11, 0.1),
+        0 1px 3px rgba(163, 23, 23, 0.3),
+        0 3px 5px rgba(179, 24, 70, 0.2),
+        0 5px 10px rgba(231, 8, 8, 0.25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(204, 1, 35, 0.15);
+}
+
+.hit-the-floor {
+    text-align: center;
+}
+
+.hit-the-floor p {
+    text-align: center;
+    font-size: 3rem !important;
+    color: var(--primary-color) !important;
+    text-shadow:
+        0 11px 0 var(--dark),
+        0 12px 0 var(--dark),
+        0 13px 0 var(--dark),
+        0 14px 0 var(--dark),
+        0 15px 0 var(--dark),
+        0 6px 1px rgba(0, 0, 0, .1),
+        0 0 5px rgba(0, 0, 0, .1),
+        0 1px 3px rgba(0, 0, 0, .3),
+        0 3px 5px rgba(0, 0, 0, .2),
+        0 5px 10px rgba(0, 0, 0, .25),
+        0 10px 10px rgba(0, 0, 0, .2),
+        0 20px 20px rgba(0, 0, 0, .15);
+}

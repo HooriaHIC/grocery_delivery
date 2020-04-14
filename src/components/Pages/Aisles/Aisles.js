@@ -1,11 +1,16 @@
 import React from 'react';
 import './Aisles.css';
-
+import { Row, Col, Container } from "react-bootstrap"
+import AislesCard from "../../widgets/Cards/AislesCard"
 function AislesPage() {
     return (
-        <div className="mt-5 p-2">
-            <h1>Hi its aisles</h1>
-        </div>
+        <Container className="pt-5 pb-5">
+            <Row>
+                <Col xs={12} md={4}>
+                    <AislesCard />
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
