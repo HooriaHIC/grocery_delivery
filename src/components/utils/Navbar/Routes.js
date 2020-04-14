@@ -14,10 +14,8 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 import { NavTab } from "react-router-tabs";
 import "../../../../node_modules/react-router-tabs/styles/react-router-tabs.css";
 import ShopersModal from "../../widgets/Modals/ShoppersModal/ShopersModal";
-import { Row } from "react-bootstrap";
+
 //import chargeFeeModal from "../../widgets/Modals/ChargeFeeModal/chargeFeeModal";
-
-
 
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
@@ -30,12 +28,10 @@ var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
 
 </div>);
 
-
 if (history.location.pathname === '/') {
     Text = <h5>Cornershop</h5>
     TabsShowOrNo = <div className="col-lg-4" ></div>
 }
-
 class Routes extends Component {
     loginModalRef = ({ handleShow }) => {
         this.showModal = handleShow;
