@@ -14,7 +14,7 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 import { NavTab } from "react-router-tabs";
 import "../../../../node_modules/react-router-tabs/styles/react-router-tabs.css";
 import ShopersModal from "../../widgets/Modals/ShoppersModal/ShopersModal";
-
+import { Row } from "react-bootstrap";
 //import chargeFeeModal from "../../widgets/Modals/ChargeFeeModal/chargeFeeModal";
 
 
@@ -85,11 +85,7 @@ class Routes extends Component {
                                 <section className="rightBox">
                                     <Typography className="typography">
                                         <Button className="primary btn AccountBtn" onClick={this.onLoginClick}>
-<<<<<<< HEAD
                                             <img alt="user account avatar" src={require('../../../assets/images/placeholder_account.png')} className="buttonImage" /> Account
-=======
-                                            <img alt="user account avatar" src={require('../../../../src/assets/images/placeholder_account.png')} className="buttonImage" /> Account
->>>>>>> 7e4b2cdbf27194031ec7c5eea218583b2ba2822c
                                     </Button>
                                         <Button className="primary btn" onClick={this.onLoginClick}>
                                             <i className="fa fa-cart-plus cart"></i>
@@ -103,7 +99,6 @@ class Routes extends Component {
                     <Toolbar>
                         <div className='row w-100'>
                             <div className='col-lg-4'>
-<<<<<<< HEAD
                                 {(() => {
                                     //Javascript for changing buttons
                                     switch (history.location.pathname) {
@@ -119,11 +114,6 @@ class Routes extends Component {
                                     }
                                 })()}
 
-=======
-                                <Button onClick={this.onLoginClick} className="primary postalCodeBtn" >
-                                    <img alt="home icon" src={require('../../../../src/assets/images/homeicon.png')} className="buttonImage" /> <b>M4b 146, CA</b> <i className="fa fa-chevron-down downIco"></i>
-                                </Button>
->>>>>>> 7e4b2cdbf27194031ec7c5eea218583b2ba2822c
                             </div>
                             <div className="col-lg-4 centered p-1 pl-4" >
                                 <div className="searchContainer">
