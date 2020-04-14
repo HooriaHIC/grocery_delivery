@@ -1,0 +1,75 @@
+.ShoperModalHead {
+    background: var(--primary-color);
+    border-bottom: none;
+}
+
+.ShoperModalHead .close {
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+.ShoperModalBody {
+    background: var(--dark);
+    border-bottom: none;
+    padding: 0rem !important;
+    padding-left: 1rem !important;
+    padding-top: 1rem !important;
+    overflow-y: scroll;
+    max-height: 600px !important;
+    padding-right: 1rem !important;
+}
+
+.ModalShoperName {
+    background: var(--dark);
+    width: 100% !important;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InfoCol {
+    text-align: start !important;
+}
+
+.InfoColRight {
+    text-align: end !important;
+}
+
+.InfoRow {
+    background-color: var(--primary-color);
+}
+
+.smallText {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+}
+
+.RelatedShoperSlide {
+    width: 100px;
+    display: inline-block;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    text-transform: uppercase;
+}
+
+.RelatedShoperSlide:hover {
+    transform: scale(1.02) !important;
+    z-index: 3 !important;
+}
+
+.ShoperModalFoot {
+    color: var(--red) !important;
+    border: none !important;
+
+}
+
+.ShoperModalFoot a {
+    color: var(--red) !important;
+    border: none !important;
+}
+
+.ShoperModal {
+    padding: 1rem !important;
+}
