@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, withRouter } from "react-router-dom"
 import SingleStorePage from "../../Pages/Store/StorePage";
 import HomePage from '../../Pages/Home/HomePage';
 import NotFound from '../../Pages/404/NotFound';
@@ -10,21 +10,21 @@ import Button from '@material-ui/core/Button';
 import "./Routes.css";
 import FormModal from "../../widgets/Modals/FormModal/FormModal";
 
-
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
+var Text = <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span id="BackText" className="backText">Back</span></button>;
 
+
+if (history.location.pathname === '/') {
+    Text = <h5>Cornershop</h5>
+}
 class Routes extends Component {
-
-
     loginModalRef = ({ handleShow }) => {
         this.showModal = handleShow;
     }
-
     onLoginClick = () => {
         this.showModal();
     }
-
     render() {
         return (
             <div>
@@ -35,7 +35,7 @@ class Routes extends Component {
                             <div className="col-4 LogoOrBack">
                                 <section className="leftBox shopname ml-4">
                                     <Typography className="typography">
-                                        <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span className="backText">Back</span></button>
+                                        {Text}
                                     </Typography>
                                 </section>
                             </div>
@@ -61,7 +61,6 @@ class Routes extends Component {
                             </div>
                         </div>
                     </Toolbar>
-
                     <Toolbar>
                         <div className='row w-100'>
                             <div className='col-lg-4'>
@@ -86,10 +85,9 @@ class Routes extends Component {
                     <Route path="/store" component={SingleStorePage} />
                     <Route component={NotFound} />
                 </Switch>
-
             </div >
         )
     }
 }
 
-export default Routes
+export default withRouter(Routes)
