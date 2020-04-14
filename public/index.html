@@ -30,7 +30,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+  <title>Grocery Delivery UI</title>
 </head>
 
 <body>
@@ -46,6 +46,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCF5TZynGockZ9EXQtdPqNhTXBMeNssBpc",
+      authDomain: "grocerydeliveryui.firebaseapp.com",
+      databaseURL: "https://grocerydeliveryui.firebaseio.com",
+      projectId: "grocerydeliveryui",
+      storageBucket: "grocerydeliveryui.appspot.com",
+      messagingSenderId: "226991262285",
+      appId: "1:226991262285:web:6a55ed766a744bbf95ea04",
+      measurementId: "G-J9CWHKYL71"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script src="https://unpkg.com/react-id-swiper@3.0.0/lib/react-id-swiper.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
