@@ -4,9 +4,11 @@ import StoreCard from '../../widgets/Cards/StoreCard';
 
 function HomePage() {
     return (
-        <div className="mt-5 p-2">
+        <div className="mt-5 p-2 mb-5">
             <div className="cards">
-                <StoreCard />
+                <a href="/store/featured">
+                    <StoreCard />
+                </a>
             </div>
         </div>
     );

@@ -3,6 +3,10 @@
     border-bottom: none;
 }
 
+.modal {
+    z-index: 1101 !important;
+}
+
 .ShoperModalHead .close {
     color: var(--white);
     background-color: var(--dark);
@@ -11,6 +15,7 @@
 .ShoperModalBody {
     background: var(--dark);
     border-bottom: none;
+    text-align: left !important;
     padding: 0rem !important;
     padding-left: 1rem !important;
     padding-top: 1rem !important;
@@ -19,57 +24,28 @@
     padding-right: 1rem !important;
 }
 
+.ShoperModalBody h6 {
+    font-size: 0.9em !important;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .ModalShoperName {
-    background: var(--dark);
     width: 100% !important;
     height: 50px;
+    line-height: 1em !important;
+    font-size: 1.1em !important;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.InfoCol {
-    text-align: start !important;
-}
-
-.InfoColRight {
-    text-align: end !important;
-}
-
-.InfoRow {
-    background-color: var(--primary-color);
-}
-
-.smallText {
-    color: rgba(255, 255, 255, 0.4);
-    margin-top: 10px;
-}
-
-.RelatedShoperSlide {
-    width: 100px;
-    display: inline-block;
-    padding: 15px 10px;
-    cursor: pointer;
-    transition: all 0.5s ease-out;
-    text-transform: uppercase;
-}
-
-.RelatedShoperSlide:hover {
-    transform: scale(1.02) !important;
-    z-index: 3 !important;
-}
-
-.ShoperModalFoot {
-    color: var(--red) !important;
-    border: none !important;
-
-}
 
 .ShoperModalFoot a {
     color: var(--red) !important;
     border: none !important;
 }
 
-.ShoperModal {
-    padding: 1rem !important;
+.descriptionStore {
+    font-size: 0.9em !important;
+    line-height: 1em !important;
+    color: rgba(255, 255, 255, 0.5);
 }
