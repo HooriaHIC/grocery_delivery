@@ -27,7 +27,14 @@ var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
     <NavTab to="/store/orders">Orders</NavTab>
 </div>);
 
+if (history.location.pathname === '/') {
+    Text = <h4 className="showName">Logo</h4>
+    TabsShowOrNo = <div className="col-md-4"></div>
+}
+
 class Routes extends Component {
+
+
     loginModalRef = (obj) => {
         this.showModal = obj && obj.handleFormShow;
     }
@@ -43,14 +50,8 @@ class Routes extends Component {
     }
     componentDidMount() {
         this.onLoginClick()
+    }
 
-    }
-    componentDidUpdate() {
-        if (history.location.pathname === '/') {
-            console.log("we are on /")
-            Text = <h6>Logo</h6>
-        }
-    }
     //ChargeModalRef = ({ handleChargeShow }) => {
     // this.showChargeModal = handleChargeShow;
     //}
