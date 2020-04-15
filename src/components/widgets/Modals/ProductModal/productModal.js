@@ -12,16 +12,17 @@ const renderRightArrow = () => <i className="fa fa-caret-right" />;
 class ProductModal extends Component {
     constructor(props, context) {
         super(props, context);
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.productHandleShow = this.productHandleShow.bind(this);
+        this.productHandleClose = this.productHandleClose.bind(this);
         this.state = {
             show: false
         }
     }
-    handleShow() {
+    productHandleShow() {
         this.setState({ show: true })
     }
-    handleClose() {
+
+    productHandleClose() {
         this.setState({ show: false })
     }
     render(props) {
@@ -31,7 +32,7 @@ class ProductModal extends Component {
                 <Modal  {...props}
                     size="lg"
                     aria-labelledby="contained-modal-title-vcenter"
-                    centered show={this.state.show} onHide={this.handleClose}>
+                    centered show={this.state.show} onHide={this.productHandleClose}>
                     <Modal.Header closeButton className="productModalHead">
                     </Modal.Header>
                     <Modal.Body className="productModalBody">

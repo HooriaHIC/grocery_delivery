@@ -35,16 +35,17 @@ if (history.location.pathname === '/') {
 }
 
 class Routes extends Component {
-    componentDidMount() {
-        console.log('Component did mount!')
-    }
-    loginModalRef = ({ handleShow }) => {
-        this.showModal = handleShow;
+    loginModalRef = ({ handleFormShow }) => {
+        this.showModal = handleFormShow;
     }
     onLoginClick = () => {
         this.showModal();
     }
+    componentDidMount() {
+        console.log('Component did mount!')
 
+        this.onLoginClick()
+    }
     ShopersModalRef = ({ handleShoperShow }) => {
         this.showShoperModal = handleShoperShow;
     }
@@ -58,15 +59,17 @@ class Routes extends Component {
     // onChargeClick = () => {
     //  this.showChargeModal();
     //  }
+
     render() {
+
         return (
             <div>
                 {/*<chargeFeeModal ref={this.ChargeModalRef}></chargeFeeModal>*/}
 
                 <FormModal ref={this.loginModalRef}></FormModal>
                 <ShopersModal ref={this.ShopersModalRef}></ShopersModal>
-
                 <AppBar position="sticky" className="appbar">
+
                     <Toolbar className="NavbarTop">
                         <div className='row w-100'>
                             <div className="col-4 LogoOrBack">
@@ -92,7 +95,6 @@ class Routes extends Component {
                                         <Button className="primary btn" onClick={this.onLoginClick}>
                                             <i className="fa fa-cart-plus cart"></i>
                                         </Button>
-
                                     </Typography>
                                 </section>
                             </div>
@@ -125,6 +127,7 @@ class Routes extends Component {
                         </div>
                     </Toolbar>
                 </AppBar>
+
                 <AnimatedSwitch
                     atEnter={{ opacity: 0 }}
                     atLeave={{ opacity: 0 }}

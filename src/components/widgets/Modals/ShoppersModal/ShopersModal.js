@@ -9,7 +9,7 @@ class ShopersModal extends Component {
     constructor(props, context) {
         super(props, context);
         this.handleShoperShow = this.handleShoperShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.handleShoperClose = this.handleShoperClose.bind(this);
         this.state = {
             show: false
         }
@@ -17,7 +17,7 @@ class ShopersModal extends Component {
     handleShoperShow() {
         this.setState({ show: true })
     }
-    handleClose() {
+    handleShoperClose() {
         this.setState({ show: false })
     }
     render(props) {
@@ -26,7 +26,7 @@ class ShopersModal extends Component {
                 <Modal  {...props}
                     size="lg"
                     aria-labelledby="contained-modal-title-vcenter"
-                    centered show={this.state.show} onHide={this.handleClose}>
+                    centered show={this.state.show} onHide={this.handleShoperClose}>
                     <Modal.Header closeButton className="ShoperModalHead">
                         <h4>Costco</h4>
                     </Modal.Header>
