@@ -22,37 +22,38 @@ const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
 var Text = <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span id="BackText" className="backText">Back</span></button>;
 var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
-
     <NavTab to="/store/featured">Featured</NavTab>
     <NavTab to="/store/aisles">Aisles</NavTab>
     <NavTab to="/store/orders">Orders</NavTab>
-
 </div>);
 
-if (history.location.pathname === '/') {
-    Text = <h5>Logo</h5>
-    TabsShowOrNo = <div className="col-lg-4" ></div>
-}
+
+console.log(history.location.pathname)
 
 class Routes extends Component {
-    loginModalRef = ({ handleFormShow }) => {
-        this.showModal = handleFormShow;
+    loginModalRef = (obj) => {
+        this.showModal = obj && obj.handleFormShow;
     }
     onLoginClick = () => {
         this.showModal();
     }
-    componentDidMount() {
-        console.log('Component did mount!')
 
-        this.onLoginClick()
-    }
-    ShopersModalRef = ({ handleShoperShow }) => {
-        this.showShoperModal = handleShoperShow;
+    ShopersModalRef = (obj) => {
+        this.showShoperModal = obj && obj.handleShoperShow;
     }
     onShopersClick = () => {
         this.showShoperModal();
     }
+    componentDidMount() {
+        this.onLoginClick()
 
+    }
+    componentDidUpdate() {
+        if (history.location.pathname === '/') {
+            console.log("we are on /")
+            Text = <h6>Logo</h6>
+        }
+    }
     //ChargeModalRef = ({ handleChargeShow }) => {
     // this.showChargeModal = handleChargeShow;
     //}
@@ -63,6 +64,7 @@ class Routes extends Component {
     render() {
 
         return (
+
             <div>
                 {/*<chargeFeeModal ref={this.ChargeModalRef}></chargeFeeModal>*/}
 
