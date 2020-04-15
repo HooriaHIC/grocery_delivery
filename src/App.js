@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
-import Routes from './components/utils/Navbar/Routes';
+import Loader from './components/utils/Loader/loader';
 import { Router } from "react-router-dom";
 const createHistory = require("history").createBrowserHistory;
 //import * as serviceWorker from "./serviceWorker"
+
+const Routes = React.lazy(() => import('./components/utils/Navbar/Routes'))
 
 const history = createHistory()
 
@@ -12,9 +14,11 @@ function App() {
   return (
     <div className="App">
 
-      <Router history={history}>
-        <Routes />
-      </Router>
+      <Suspense fallback={<Loader />}>
+        <Router history={history}>
+          <Routes />
+        </Router>
+      </Suspense>
 
     </div>
   );

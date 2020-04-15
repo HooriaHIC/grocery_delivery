@@ -12,16 +12,17 @@ const renderRightArrow = () => <i className="fa fa-caret-right" />;
 class ProductModal extends Component {
     constructor(props, context) {
         super(props, context);
-        this.handleShow = this.handleShow.bind(this);
-        this.handleClose = this.handleClose.bind(this);
+        this.productHandleShow = this.productHandleShow.bind(this);
+        this.productHandleClose = this.productHandleClose.bind(this);
         this.state = {
             show: false
         }
     }
-    handleShow() {
+    productHandleShow() {
         this.setState({ show: true })
     }
-    handleClose() {
+
+    productHandleClose() {
         this.setState({ show: false })
     }
     render(props) {
@@ -31,7 +32,7 @@ class ProductModal extends Component {
                 <Modal  {...props}
                     size="lg"
                     aria-labelledby="contained-modal-title-vcenter"
-                    centered show={this.state.show} onHide={this.handleClose}>
+                    centered show={this.state.show} onHide={this.productHandleClose}>
                     <Modal.Header closeButton className="productModalHead">
                     </Modal.Header>
                     <Modal.Body className="productModalBody">
@@ -39,8 +40,8 @@ class ProductModal extends Component {
                             <Col xs={6} md={4}>
 
                             </Col>
-                            <Col xs={6} md={4}>
-                                <Image src="https://previews.123rf.com/images/jchizhe/jchizhe1808/jchizhe180800041/106615127-colorful-fruit-pattern-bananas-over-blue-background-square-crop-top-view-pop-art-design-creative-sum.jpg" rounded style={{ width: '15rem' }} />
+                            <Col md={4}>
+                                <Image src="https://previews.123rf.com/images/jchizhe/jchizhe1808/jchizhe180800041/106615127-colorful-fruit-pattern-bananas-over-blue-background-square-crop-top-view-pop-art-design-creative-sum.jpg" className="img-fluid" />
                             </Col>
                             <Col xs={6} md={4}>
                             </Col>
@@ -75,13 +76,13 @@ class ProductModal extends Component {
                             <Col xs={6} md={12} className="InfoCol">
                                 <h6>Product Description</h6>
                             </Col>
-                            <Col xs={6} md={12} className="InfoCol">
+                            <Col md={12} className="InfoCol">
                                 <p className="smallText">Soft, sweet and delicious, the banana is a popular choice for breakfast, snacks or any time of the day. The vibrant yellow peel provides natural protection while storing, and is a great indicator of when the fruit is ready to eat!</p>
                             </Col>
-                            <Col xs={6} md={12} className="InfoCol">
+                            <Col md={12} className="InfoCol">
                                 <h6>Related</h6>
                             </Col>
-                            <Col xs={6} md={12}>
+                            <Col md={12}>
                                 <div className="menu-bar">
                                     <ComponentSlider
                                         renderLeftArrow={renderLeftArrow}

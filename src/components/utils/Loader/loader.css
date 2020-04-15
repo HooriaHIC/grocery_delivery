@@ -1,0 +1,8 @@
+.loader {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 100px;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}

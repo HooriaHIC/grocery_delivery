@@ -6,12 +6,12 @@ import {
 import ProductModal from '../../widgets/Modals/ProductModal/productModal'
 
 class ProductCard extends Component {
-    MoreModalRef = ({ handleShow }) => {
-        this.showModal = handleShow;
-    }
 
+    MoreModalRef = (obj) => {
+        this.showProductModal = obj && obj.productHandleShow
+    }
     onMoreClick = () => {
-        this.showModal();
+        this.showProductModal();
     }
     render() {
         return (

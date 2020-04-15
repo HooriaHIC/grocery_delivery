@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import SingleStorePage from "../../Pages/Store/StorePage";
 import HomePage from '../../Pages/Home/HomePage';
 import NotFound from '../../Pages/404/NotFound';
@@ -14,6 +14,7 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 import { NavTab } from "react-router-tabs";
 import "../../../../node_modules/react-router-tabs/styles/react-router-tabs.css";
 import ShopersModal from "../../widgets/Modals/ShoppersModal/ShopersModal";
+import { AnimatedSwitch } from 'react-router-transition';
 
 //import chargeFeeModal from "../../widgets/Modals/ChargeFeeModal/chargeFeeModal";
 
@@ -29,17 +30,22 @@ var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
 </div>);
 
 if (history.location.pathname === '/') {
-    Text = <h5>Cornershop</h5>
+    Text = <h5>Logo</h5>
     TabsShowOrNo = <div className="col-lg-4" ></div>
 }
+
 class Routes extends Component {
-    loginModalRef = ({ handleShow }) => {
-        this.showModal = handleShow;
+    loginModalRef = ({ handleFormShow }) => {
+        this.showModal = handleFormShow;
     }
     onLoginClick = () => {
         this.showModal();
     }
+    componentDidMount() {
+        console.log('Component did mount!')
 
+        this.onLoginClick()
+    }
     ShopersModalRef = ({ handleShoperShow }) => {
         this.showShoperModal = handleShoperShow;
     }
@@ -53,14 +59,17 @@ class Routes extends Component {
     // onChargeClick = () => {
     //  this.showChargeModal();
     //  }
+
     render() {
+
         return (
             <div>
                 {/*<chargeFeeModal ref={this.ChargeModalRef}></chargeFeeModal>*/}
+
                 <FormModal ref={this.loginModalRef}></FormModal>
                 <ShopersModal ref={this.ShopersModalRef}></ShopersModal>
-
                 <AppBar position="sticky" className="appbar">
+
                     <Toolbar className="NavbarTop">
                         <div className='row w-100'>
                             <div className="col-4 LogoOrBack">
@@ -86,7 +95,6 @@ class Routes extends Component {
                                         <Button className="primary btn" onClick={this.onLoginClick}>
                                             <i className="fa fa-cart-plus cart"></i>
                                         </Button>
-
                                     </Typography>
                                 </section>
                             </div>
@@ -119,13 +127,19 @@ class Routes extends Component {
                         </div>
                     </Toolbar>
                 </AppBar>
-                <Switch>
+
+                <AnimatedSwitch
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 0 }}
+                    atActive={{ opacity: 1 }}
+                    className="switch-wrapper"
+                >
                     <Route exact path="/" component={HomePage} />
                     <Route path='/store/orders/' component={OrdersPage} />
                     <Route path='/store/aisles/' component={AislesPage} />
                     <Route path="/store/featured" component={SingleStorePage} />
                     <Route component={NotFound} />
-                </Switch>
+                </AnimatedSwitch>
             </div >
         )
     }
