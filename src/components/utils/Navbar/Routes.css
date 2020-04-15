@@ -46,7 +46,8 @@
 .searchContainer {
     display: inline-flex;
     position: relative;
-    height: 40px;
+    height: 35px;
+
     width: 100% !important;
     border: none;
     border-radius: 10px / 10px;
@@ -61,7 +62,7 @@
 .searchBox {
     border: 0;
     background-color: var(--medium-black);
-    padding: 0rem 0.2rem 0rem 0.2rem;
+    padding: 0rem 0.3rem 0rem 0.3rem;
     color: var(--white);
     width: 100% !important;
 }
@@ -149,6 +150,14 @@
 
     .AccountBtn {
         display: none !important;
+    }
+
+    .searchContainer .searchBox {
+        background-color: var(--dark);
+    }
+
+    .searchIcon {
+        background-color: var(--dark);
     }
 }
 

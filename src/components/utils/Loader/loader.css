@@ -1,0 +1,7 @@
+.loader {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}

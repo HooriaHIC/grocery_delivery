@@ -28,7 +28,7 @@ class FormModal extends Component {
                     aria-labelledby="contained-modal-title-vcenter"
                     centered show={this.state.show} onHide={this.handleClose} >
 
-                    <Modal.Body style={{ width: '300px' }}>
+                    <Modal.Body >
                         <h3>Cornorshop</h3>
                         <p className="mt-3 slogan">We deliver your groceries in one hour</p>
                         <div className="Auth-btn mt-5">

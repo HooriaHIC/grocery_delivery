@@ -39,8 +39,8 @@ class ProductModal extends Component {
                             <Col xs={6} md={4}>
 
                             </Col>
-                            <Col xs={6} md={4}>
-                                <Image src="https://previews.123rf.com/images/jchizhe/jchizhe1808/jchizhe180800041/106615127-colorful-fruit-pattern-bananas-over-blue-background-square-crop-top-view-pop-art-design-creative-sum.jpg" rounded style={{ width: '15rem' }} />
+                            <Col md={4}>
+                                <Image src="https://previews.123rf.com/images/jchizhe/jchizhe1808/jchizhe180800041/106615127-colorful-fruit-pattern-bananas-over-blue-background-square-crop-top-view-pop-art-design-creative-sum.jpg" className="img-fluid" />
                             </Col>
                             <Col xs={6} md={4}>
                             </Col>
@@ -75,13 +75,13 @@ class ProductModal extends Component {
                             <Col xs={6} md={12} className="InfoCol">
                                 <h6>Product Description</h6>
                             </Col>
-                            <Col xs={6} md={12} className="InfoCol">
+                            <Col md={12} className="InfoCol">
                                 <p className="smallText">Soft, sweet and delicious, the banana is a popular choice for breakfast, snacks or any time of the day. The vibrant yellow peel provides natural protection while storing, and is a great indicator of when the fruit is ready to eat!</p>
                             </Col>
-                            <Col xs={6} md={12} className="InfoCol">
+                            <Col md={12} className="InfoCol">
                                 <h6>Related</h6>
                             </Col>
-                            <Col xs={6} md={12}>
+                            <Col md={12}>
                                 <div className="menu-bar">
                                     <ComponentSlider
                                         renderLeftArrow={renderLeftArrow}

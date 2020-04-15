@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import SingleStorePage from "../../Pages/Store/StorePage";
 import HomePage from '../../Pages/Home/HomePage';
 import NotFound from '../../Pages/404/NotFound';
@@ -14,6 +14,7 @@ import FormModal from "../../widgets/Modals/FormModal/FormModal";
 import { NavTab } from "react-router-tabs";
 import "../../../../node_modules/react-router-tabs/styles/react-router-tabs.css";
 import ShopersModal from "../../widgets/Modals/ShoppersModal/ShopersModal";
+import { AnimatedSwitch } from 'react-router-transition';
 
 //import chargeFeeModal from "../../widgets/Modals/ChargeFeeModal/chargeFeeModal";
 
@@ -32,7 +33,11 @@ if (history.location.pathname === '/') {
     Text = <h5>Logo</h5>
     TabsShowOrNo = <div className="col-lg-4" ></div>
 }
+
 class Routes extends Component {
+    componentDidMount() {
+        console.log('Component did mount!')
+    }
     loginModalRef = ({ handleShow }) => {
         this.showModal = handleShow;
     }
@@ -57,6 +62,7 @@ class Routes extends Component {
         return (
             <div>
                 {/*<chargeFeeModal ref={this.ChargeModalRef}></chargeFeeModal>*/}
+
                 <FormModal ref={this.loginModalRef}></FormModal>
                 <ShopersModal ref={this.ShopersModalRef}></ShopersModal>
 
@@ -119,13 +125,18 @@ class Routes extends Component {
                         </div>
                     </Toolbar>
                 </AppBar>
-                <Switch>
+                <AnimatedSwitch
+                    atEnter={{ opacity: 0 }}
+                    atLeave={{ opacity: 0 }}
+                    atActive={{ opacity: 1 }}
+                    className="switch-wrapper"
+                >
                     <Route exact path="/" component={HomePage} />
                     <Route path='/store/orders/' component={OrdersPage} />
                     <Route path='/store/aisles/' component={AislesPage} />
                     <Route path="/store/featured" component={SingleStorePage} />
                     <Route component={NotFound} />
-                </Switch>
+                </AnimatedSwitch>
             </div >
         )
     }
