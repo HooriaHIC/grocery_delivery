@@ -15,20 +15,17 @@ import { NavTab } from "react-router-tabs";
 import "../../../../node_modules/react-router-tabs/styles/react-router-tabs.css";
 import ShopersModal from "../../widgets/Modals/ShoppersModal/ShopersModal";
 import { AnimatedSwitch } from 'react-router-transition';
-
 //import chargeFeeModal from "../../widgets/Modals/ChargeFeeModal/chargeFeeModal";
 
 const createHistory = require("history").createBrowserHistory;
 const history = createHistory()
+
 var Text = <button className="backButton" onClick={history.goBack}><i className="fa fa-chevron-left"></i> <span id="BackText" className="backText">Back</span></button>;
 var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
     <NavTab to="/store/featured">Featured</NavTab>
     <NavTab to="/store/aisles">Aisles</NavTab>
     <NavTab to="/store/orders">Orders</NavTab>
 </div>);
-
-
-console.log(history.location.pathname)
 
 class Routes extends Component {
     loginModalRef = (obj) => {
@@ -60,7 +57,6 @@ class Routes extends Component {
     // onChargeClick = () => {
     //  this.showChargeModal();
     //  }
-
     render() {
 
         return (
