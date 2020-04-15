@@ -29,7 +29,7 @@ var TabsShowOrNo = (<div className="col-md-4 pl-3 TabsShowORNo ">
 </div>);
 
 if (history.location.pathname === '/') {
-    Text = <h5>Cornershop</h5>
+    Text = <h5>Logo</h5>
     TabsShowOrNo = <div className="col-lg-4" ></div>
 }
 class Routes extends Component {
